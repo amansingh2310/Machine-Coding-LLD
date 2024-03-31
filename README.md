@@ -356,3 +356,37 @@ Question | Solutions | Videos
 | Movie Ticket Booking | [Solution-1](https://github.com/anomaly2104/ticket-booking-low-level-system-design) | [Video-1](https://www.youtube.com/playlist?list=PL564gOx0bCLpAL7yMJqOuK3_hBuLkyRhn)|
 | Uber Eats/ Door dash/ Swiggy| [Solution-1](https://github.com/mayankbansal93/lld-food-delivery-zomato-swiggy) | [Video-1](https://www.youtube.com/watch?v=LePt0PUKIjE&list=PLHNJ91XSF3wzT6BaLVi4WbnuHcfZSXMek&index=5)
 | e-Commerce Review System| [Solution-1](https://github.com/gopalbala/reviews) | [Video-1](https://www.youtube.com/watch?v=bKiCkExbe-Y)
+
+### Flipkart Machine Coding Round: FLIPMED
+
+##### Description:
+We are required to build an app that lets patients connect to doctors and book appointments. The day is divided into time slots of 60 mins each, starting from 9 am to 9 pm. Doctors can login to the portal and declare their availability for the given day in terms of slots.  Patients can book appointments/ cancel existing appointments. For simplicity you can assume that the doctors’ availability is declared for that particular day only. 
+
+##### Features:
+A new doctor should be able to register, and mention his/her speciality among (Cardiologist, Dermatologist, Orthopedic, General Physician)
+A doctor should be able to declare his/her availability in each slot for the day. For example, the slots will be of 60 mins like 9am-10am, 11am-12pm..
+Patients should be able to register. Patients should be able to search available slots based on speciality. Any order of slots is okay for viewing to patients. 
+Patients should be able to book appointments with a doctor for an available slot.A patient can book multiple appointments in a day.  A patient cannot book two appointments with two different doctors in the same time slot.
+A patient/doctor should be able to view his/her booked appointments for the day.  
+
+##### Bonus requirements:
+Patients can also cancel an appointment, in which case that slot becomes available for someone else to book.
+Different ranking strategy - use rating of doctor as a strategy to display a list of available doctors for a given specialization.
+The slots should be displayed in a ranked fashion. Default ranking strategy should be to rank by start time. But we should be able to plugin more strategies like Doctor’s rating etc in future.
+
+##### Other Notes:
+Do not use any database or NoSQL store, use in-memory data-structure for now. 
+You are free to use any language of your choice.
+Do not create any UI for the application.
+For demo purposes, write a driver class which will execute all the commands at one place in the code and have test cases to test multiple users.
+Work on the expected output first and then add good-to-have features of your own.
+Please prioritize code compilation, execution and completion.
+
+##### Expectations:
+Make sure that you have working and demonstrable code.
+Make sure that code is functionally correct.
+Code should be modular and readable.
+Separation of concern should be addressed.
+Code should easily accommodate new requirements with minimal changes.
+Code should be easily testable.
+Code should have proper error handling
